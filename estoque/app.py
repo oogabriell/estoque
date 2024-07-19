@@ -17,13 +17,13 @@ conn = pyodbc.connect(
 # Criar um cursor para executar consultas SQL
 cursor = conn.cursor()
 
-# Rota para exibir os leads
+# Rotas
 @app.route('/')
 def index():
    
     return render_template('inicial.html')
 
-    # Rota para exibir os leads
+# Rotas
     
 @app.route('/painel', methods=['GET', 'POST'])
 def dados_estoque():
@@ -163,9 +163,8 @@ def dados_transferencia():
     destino = ''
     query = ''
     dados= ''    
+       
     
-    
-    #request by name  
     datainicial = request.form.get('datainicial')
     if datainicial:
             datainicial = datetime.strptime(datainicial, '%Y-%m-%d').strftime('%d/%m/%Y')    
