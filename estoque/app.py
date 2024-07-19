@@ -11,7 +11,7 @@ conn = pyodbc.connect(
     'Server=xxx.xxx.xx.xx,xxxxx;'
     'Database=dbxxx;'
     'UID=XXX;'
-    'PWD=iptju40167HJDMT@?;'
+    'PWD=xxxxxxx;'
 )
 
 # Criar um cursor para executar consultas SQL
