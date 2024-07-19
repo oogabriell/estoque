@@ -8,9 +8,9 @@ app = Flask(__name__,template_folder='templates', static_folder='static')
 # Configurar a conexão com o banco de dados SQL Server
 conn = pyodbc.connect(
     'Driver={SQL Server};'
-    'Server=138.219.91.72,38000;'
-    'Database=C8KRDC_128994_RM_PD;'
-    'UID=CLT128994gabriel.gomes;'
+    'Server=xxx.xxx.xx.xx,xxxxx;'
+    'Database=dbxxx;'
+    'UID=XXX;'
     'PWD=iptju40167HJDMT@?;'
 )
 
